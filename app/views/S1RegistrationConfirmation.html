@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">ALPHA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+{{ request.args }}
+</div>
+ <div class="govuk-box-highlight">
+ <div class="heading-large">S1 form registered for Harry Howard</div>
+ </div>
+ 
+ <p>
+  <a href="#">View Harry Howard's S1 form</a>
+</p>
+	<div class="column-three-thirds">
+			<h1 class="heading-large">
+			Your cases<span class="heading-secondary"></span>
+		</h1>
+		<p>Today, you have worked on:</p>
+	<ul class="list list-bullet">
+		<li>7 requests</li>
+		<li>2 Registrations</li>
+		<li>5 Cancellations</li>
+	</ul>
+
+</div>
+	<form action="/S1Request.html">	
+  <div class="form-group">
+		<input class="button" type="submit" value="Get another case">	
+  </div>
+</form>
+</main>
+{% endblock %}
+
+
