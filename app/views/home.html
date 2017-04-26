@@ -2,29 +2,22 @@
 {% endblock %} {% block content %}
 
 <main id="content" role="main">
-<div class="phase-banner">
-  <p>
-    <strong class="phase-tag">ALPHA</strong>
-    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-  </p>
-</div>
+	{% include "includes/phase_banner_alpha.html" %}
 	<div class="column-three-thirds">
-			<h1 class="heading-large">
+		<h1 class="heading-large">
 			Your cases<span class="heading-secondary"></span>
 		</h1>
 		<p>Hello John, if you're ready you can get your first case of the day</p>
-			
+
 	</div>
 	<form action="request/S1Request.html">
-	
-  <div class="form-group">
-		<input class="button" type="submit" value="Get a case">	
-  </div>
-</form>
 
+		<div class="form-group">
+			<input class="button" type="submit" value="Get a case">
+		</div>
+	</form>
 	<p><a href="#">Add a manual request</a></p>
 	<a href="#">Add a manual registration</a>
-
 </main>
 {% endblock %}
 
