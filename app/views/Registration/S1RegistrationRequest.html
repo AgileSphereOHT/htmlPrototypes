@@ -1,0 +1,19 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+	{% include "../includes/phase_banner_alpha.html" %}
+	<div class="column-three-thirds">
+			<h1 class="heading-large">
+			Request for S1 registration<span class="heading-secondary"></span>
+		</h1>
+				{% include "includes/S1InfoDetails.html" %}
+	</div>
+	<br>
+	<form action="S1RegistrationConfirmation.html">
+        <input class="button" type="submit" value="Register S1">
+</form>
+</main>
+{% endblock %}
+
+

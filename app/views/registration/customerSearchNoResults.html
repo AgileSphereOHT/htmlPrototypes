@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "../includes/phase_banner_alpha.html" %}
+    <div class="column-three-thirds">
+        <h1 class="heading-large">
+            S1 Registration<span class="heading-secondary"></span>
+        </h1>
+        <details>
+            <summary><span class="summary">No record was found matching the request details.</span></summary>
+            <div class="panel panel-border-narrow">
+                <p>No record was found matching the request details.</p>
+            </div>
+        </details>
+        <form action="customerSearchWithResults.html">
+            <br>
+            <div class="form-group">
+                <label class="form-label" for="search">Search by Name, Date of birth or NINO. You can also combine more
+                    than one criteria</label>
+                <input class="form-control" id="search" type="text">
+                <input class="button" type="submit" value="Search">
+            </div>
+        </form>
+        <br>
+        <p>Or create a new customer</p>
+        <input class="button" type="submit" value="Create customer">
+    </div>
+</main>
+{% endblock %}
+
+
