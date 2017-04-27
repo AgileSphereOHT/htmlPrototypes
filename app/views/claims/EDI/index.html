@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="column-three-thirds margin-bottom-20">
+		<h1 class="heading-large">
+			Your cases<span class="heading-secondary"></span>
+		</h1>
+		<p>Hello John, yuo have been assigned</p>
+    <h3 class="heading-small">Claims from Spain <a href="#">Claim ID: 2743248</a></h3>
+    <p>If you are ready, you can get your first invoice of the day from the above claim.</p>
+	</div>
+	<form action="invoice.html">
+		<div class="form-group">
+			<input class="button" type="submit" value="Get an invoice">
+		</div>
+	</form>
+</main>
+{% endblock %}

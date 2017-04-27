@@ -17,18 +17,22 @@
         Create a claim (Paper based claims)
       </h2 >
       <p>Create a new claim for a Member State that came by paper</p>
-      <form action="/claims/createClaim.html">
+      <form action="createClaim.html">
         <div class="form-group">
           <input class="button" type="submit" value="Create a claim">
         </div>
       </form>
     </div>
-    <div>
+    <div> <?-- stuff for tabs -->
       <h2 class="heading-medium">
         Recent claims
       </h2 >
-      <div class="margin-bottom-50">
-        FA claims from UK
+      <div class="tab">
+        <a class="tablinks active" onclick="openTab(event, 'FA')" href="#">FA claims from UK</a>
+        <a class="tablinks " onclick="openTab(event, 'UK')" href="#">UK claims from FA</a>
+      </div>
+
+      <div id="FA" class="tabcontentActive">
         <table >
           <thead>
             <tr>
@@ -42,7 +46,7 @@
           </thead>
           <tbody>
             <tr>
-              <td><a href="/claims/claim.html">123862</a></td>
+              <td><a href="claim.html">123862</a></td>
               <td>Open</td>
               <td>Spain</td>
               <td>1 January 2016</td>
@@ -50,7 +54,7 @@
               <td class="numeric">€ 2,763</td>
             </tr>
             <tr>
-              <td><a href="/claims/claim.html">123862</a></td>
+              <td><a href="claim.html">123862</a></td>
               <td>Open</td>
               <td>Sweden</td>
               <td>1 January 2016</td>
@@ -58,7 +62,7 @@
               <td class="numeric">€ 2,763</td>
             </tr>
             <tr>
-              <td><a href="/claims/claim.html">9834123</a></td>
+              <td><a href="claim.html">9834123</a></td>
               <td>Open</td>
               <td>Italy</td>
               <td>1 January 2016</td>
@@ -74,7 +78,7 @@
               <td class="numeric">€ 239,235</td>
             </tr>
             <tr>
-              <td><a href="/claims/claim.html">7482348</a></td>
+              <td><a href="claim.html">7482348</a></td>
               <td>Open</td>
               <td>Poland</td>
               <td>1 January 2016</td>
@@ -84,9 +88,9 @@
           </tbody>
         </table>
       </div>
-      <div>
-        UK claims from FA
-        <table>
+
+      <div id="UK" class="tabcontent">
+        <table >
           <thead>
             <tr>
               <th scope="col">Claim ID</th>
@@ -99,49 +103,34 @@
           </thead>
           <tbody>
             <tr>
-              <td><a href="/claims/claim.html">123862</a></td>
-              <td>Open</td>
-              <td>Sweden</td>
-              <td>1 January 2016</td>
-              <td>31 June 2016</td>
-              <td class="numeric">£ 2,763</td>
-            </tr>
-            <tr>
-              <td><a href="/claims/claim.html">123862</a></td>
-              <td>Open</td>
-              <td>Spain</td>
-              <td>1 January 2016</td>
-              <td>31 June 2016</td>
-              <td class="numeric">£ 2,763</td>
-            </tr>
-            <tr>
-              <td><a href="/claims/claim.html">9834123</a></td>
+              <td><a href="claim.html">9834123</a></td>
               <td>Open</td>
               <td>Italy</td>
               <td>1 January 2016</td>
               <td>31 June 2016</td>
-              <td class="numeric">£ 322,763</td>
+              <td class="numeric">€ 322,763</td>
             </tr>
             <tr>
-              <td><a href="/claims/claim.html">9328497</a></td>
+              <td><a href="claim.html">9328497</a></td>
               <td>Open</td>
               <td>Germany</td>
               <td>1 January 2016</td>
               <td>31 June 2016</td>
-              <td class="numeric">£ 239,235</td>
+              <td class="numeric">€ 239,235</td>
             </tr>
             <tr>
-              <td><a href="/claims/claim.html">7482348</a></td>
+              <td><a href="claim.html">7482348</a></td>
               <td>Open</td>
               <td>Poland</td>
               <td>1 January 2016</td>
               <td>31 June 2016</td>
-              <td class="numeric">£ 4,932,234</td>
+              <td class="numeric">€ 4,932,234</td>
             </tr>
           </tbody>
         </table>
       </div>
-    </div>
+    </div> <?-- End of stuff for tabs -->
+
   </div>
 
 </main>
