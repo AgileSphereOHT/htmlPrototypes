@@ -1,0 +1,145 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="column-three-thirds ">
+    <div class="margin-top-20">
+      <a href="index.html">back</a>
+      <h1 class="heading-large">
+        Claim ID: 328492
+      </h1>
+      <div>
+        <h2 class="heading-medium">Claim details</h2>
+        <div class="s1info">
+          <table>
+            <tr class="tRow">
+              <td class="width20p bottomCell"><div class="dataHeader">Member State</div>Spain</td>
+              <td class="width20p bottomCell"><div class="dataHeader ">From date</div>01 January 2016</td>
+              <td class="width20p bottomCell"><div class="dataHeader ">To date</div>31 June 2016</td>
+              <td class="width20p bottomCell"></td>
+              <td class="width20p bottomCell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="heading-medium">Customer details</h2>
+      <div class="s1info">
+        <table>
+          <tr class="tRow">
+            <td class="width20p bottomCell"><div class="dataHeader">First name</div>John</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Last name</div>Doe</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Gender</div>Male</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Date of birth</div>20 September 1954</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">National ID</div>JH1243498937</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="heading-medium">Potential Matches</h2>
+    <p>The following are the potential matches for the request. Please select the correct cutomer</p>
+    <div>
+      <table >
+        <thead>
+          <tr>
+            <th></th>
+            <th >First name</th>
+            <th >Last name</th>
+            <th >Gender</th>
+            <th >Date of birth</th>
+            <th >National ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row height40">
+            <td>
+              <div class="multiple-choice">
+                <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                <label for="radio-inline-1"></label>
+              </div>
+            </td>
+            <td >Johnathan</td>
+            <td >Doe</td>
+            <td >Male</td>
+            <td >20 September 1954</td>
+            <td >JH1243498937</td>
+          </tr>
+
+            <tr class="row height40">
+              <td>
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1"></label>
+                </div>
+              </td>
+              <td >Johnathan</td>
+              <td >Doe</td>
+              <td >Male</td>
+              <td >20 September 1954</td>
+              <td >XX23948329</td>
+            </tr>
+
+              <tr class="row height40">
+                <td>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                    <label for="radio-inline-1"></label>
+                  </div>
+                </td>
+                <td >John</td>
+                <td >Doe</td>
+                <td >Male</td>
+                <td >20 September 1954</td>
+                <td >YY2343242</td>
+              </tr>
+
+                <tr class="row height40">
+                  <td >
+                    <div class="multiple-choice">
+                      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                      <label for="radio-inline-1"></label>
+                    </div>
+                  </td>
+                  <td >John</td>
+                  <td >Doe</td>
+                  <td >Male</td>
+                  <td >20 September 1954</td>
+                  <td >ZZ2343566</td>
+                </tr>
+        </tbody>
+      </table>
+      <p class="margin-top-20"><a href="#">Show more matches</a></p>
+      <div>
+        <div class="multiple-choice">
+      <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+      <label for="waste-type-1">Process next invoice after this</label>
+    </div>
+
+<div class="margin-top-50">
+  <form action="invoiceSuccess.html">
+  <div class="form-group">
+    <input class="button" type="submit" value="Create claim">
+  </div>
+</form>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</main>
+{% endblock %}

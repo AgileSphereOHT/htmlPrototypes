@@ -60,12 +60,20 @@ td {
   margin-bottom: 50px;
 }
 
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
 .padding-bottom-50 {
   padding-bottom: 50px;
 }
 
 .margin-top-20{
   margin-top: 20px;
+}
+
+.margin-top-50{
+  margin-top: 50px;
 }
 /* Style the tab */
 .tablinks{
@@ -112,4 +120,11 @@ div.tab a.active {
 .tabcontentActive {
     display: block;
     padding-top: 20px;
+}
+
+.width20p{
+  width:20%;
+}
+.height40{
+  height:66px;
 }
