@@ -1,0 +1,97 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="column-three-thirds ">
+    <div class="margin-top-20">
+      <a href="index.html">Back</a>
+      <h1 class="heading-large">
+        Create a claim
+      </h1>
+    </div>
+    <form action="/claims/claim.html">
+      <div class="form-group">
+        <label class="form-label-bold" for="full-name-f1">Full name</label>
+        <input class="form-control" id="full-name-f1" type="text">
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">From date</span>
+            <span class="form-hint" id="example-dob-hint-3">For example, 31 3 1980</span>
+          </legend>
+          <div class="form-date">
+            <div class="form-group form-group-day">
+              <label class="form-label" for="example-dob-day-3">Day</label>
+              <input class="form-control" id="example-dob-day-3" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="example-dob-hint-3">
+            </div>
+            <div class="form-group form-group-month">
+              <label class="form-label" for="example-dob-month-3">Month</label>
+              <input class="form-control" id="example-dob-month-3" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+            <div class="form-group form-group-year">
+              <label class="form-label" for="example-dob-year-3">Year</label>
+              <input class="form-control" id="example-dob-year-3" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">To date</span>
+            <span class="form-hint" id="example-dob-hint-3">For example, 31 3 1980</span>
+          </legend>
+          <div class="form-date">
+            <div class="form-group form-group-day">
+              <label class="form-label" for="example-dob-day-3">Day</label>
+              <input class="form-control" id="example-dob-day-3" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="example-dob-hint-3">
+            </div>
+            <div class="form-group form-group-month">
+              <label class="form-label" for="example-dob-month-3">Month</label>
+              <input class="form-control" id="example-dob-month-3" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+            <div class="form-group form-group-year">
+              <label class="form-label" for="example-dob-year-3">Year</label>
+              <input class="form-control" id="example-dob-year-3" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="select-box">Currency</label>
+        <select class="form-control" id="select-box">
+          <option>Euro</option>
+          <option>Bulgarian lev</option>
+          <option>Croatian kuna</option>
+          <option>Czech koruna</option>
+          <option>Danish krone</option>
+          <option>Hungarian forint</option>
+          <option>Polish złoty</option>
+          <option>Romanian leu</option>
+          <option>Swedish krona</option>
+          <option>Swiss franc</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label-bold" for="full-name-f1">Amount</label>
+        <input class="form-control" id="full-name-f1" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label-bold" for="full-name-f1">Number of invoices</label>
+        <input class="form-control" id="full-name-f1" type="text">
+      </div>
+      <div class="form-group">
+        <input class="button" type="submit" value="Create claim">
+      </div>
+    </form>
+  </div>
+
+</main>
+{% endblock %}
