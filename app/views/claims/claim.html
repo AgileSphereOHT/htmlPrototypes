@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="column-three-thirds ">
+    <div class="margin-top-20">
+      <a href="index.html">back</a>
+      <h1 class="heading-large">
+        Claim: ID 328492
+      </h1>
+      {% include "includes/claimDetails.html" %}
+      {% include "includes/processedInvoices.html" %}
+    </div>
+  </div>
+
+</main>
+{% endblock %}
