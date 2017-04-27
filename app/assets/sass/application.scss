@@ -67,3 +67,49 @@ td {
 .margin-top-20{
   margin-top: 20px;
 }
+/* Style the tab */
+.tablinks{
+  background: #ccc;
+}
+
+div.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Style the buttons inside the tab */
+div.tab a {
+    background-color: #ccc;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin:5px 5px 0px 5px;
+    text-decoration: none;
+    color:#000;
+}
+
+/* Change background color of buttons on hover */
+div.tab a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab a.active {
+    background-color: #fff;
+    border-color: #bbb;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding-top: 20px;
+}
+.tabcontentActive {
+    display: block;
+    padding-top: 20px;
+}
