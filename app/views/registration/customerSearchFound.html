@@ -1,0 +1,42 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "../includes/phase_banner_alpha.html" %}
+    <div class="column-three-thirds">
+        <h1 class="heading-large">
+            S1 Registration<span class="heading-secondary"></span>
+        </h1>
+        <h3 class="heading-small">Customer Details</h3>
+        <div class="s1info">
+        <table>
+            <tr class="noBorder">
+                <td class="bottomCell"><div class="dataHeader">First Name</div>Harry</td>
+                <td class="bottomCell"><div class="dataHeader">Last Name</div>Howard</td>
+                <td class="bottomCell"><div class="dataHeader">Gender</div>Male</td>
+                <td class="bottomCell"><div class="dataHeader">Date of birth</div>25 September 1958</td>
+                <td class="bottomCell"><div class="dataHeader">National Insurance Number</div>JC344334C</td>
+                <td class="bottomCell"><div class="dataHeader">Current address</div>40 Invisible Street<br>Nowhere City<br>XX9 4YY<br>UK</td>
+            </tr>
+        </table>
+</div>
+        <div class="heading-small">Customer Search</div>
+        <div class="s1info">
+        <form action="customerSearchWithResults.html">
+            <br>
+            <div class="form-group">
+                <label class="form-label" for="search">You can search by any combination of first name, last name, date of birth and National Insurance number.
+                    than one criteria</label>
+                <input class="form-control" id="search" type="text" value="Harry Howard 25/9/1958">
+                <input class="button" type="submit" value="Search">
+            </div>
+        </form><br><br><br><br>
+        </div>
+        {% include "../registration/searchResults.html" %}
+        <br>
+        <input class="button" type="submit" value="Create a new customer record"/>
+    </div>
+</main>
+{% endblock %}
+
+
