@@ -44,6 +44,10 @@ $path: "/public/images/";
 	border-bottom: 0px
 }
 
+.button-secondary{
+   @include button($grey-3);
+}
+
 .keyData {
 	margin-right: 30px;
 
