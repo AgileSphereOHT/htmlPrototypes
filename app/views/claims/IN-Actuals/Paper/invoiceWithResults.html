@@ -1,0 +1,40 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="column-three-thirds ">
+    <div class="margin-top-20">
+      <a href="index.html">back</a>
+      <h1 class="heading-large">
+        Add Invoices
+      </h1>
+    </div>
+    <div class="margin-top-20">
+      <h3 class="heading-small">
+        Search for a customer
+      </h3>
+    </div>
+    <form action="invoiceWithResults.html" >
+        <div class="form-group">
+            <label class="form-label" for="search">You can search by any combination of first name, last name, date of birth and National Insurance number.</label>
+            <input class="form-control" id="search" type="text">
+            <input class="button" type="submit" value="Search">
+            <a href="#" style="padding:20px;">Advanced search</a>
+        </div>
+    </form>
+
+        {% include "claims/IN-Actuals/Paper/searchResults.html" %}
+  </div>
+
+  <div class="margin-top-50">
+    <input class="button" type="submit" value="Create a customer">
+  </div>
+
+</main>
+{% endblock %}

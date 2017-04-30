@@ -1,0 +1,130 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="column-three-thirds ">
+    <div class="margin-top-20">
+      <a href="index.html">back</a>
+      <h1 class="heading-large">
+        Add Invoices
+      </h1>
+    </div>
+    <div>
+      <h2 class="heading-medium">Customer details</h2>
+      <div class="s1info">
+        <table>
+          <tr class="tRow">
+            <td class="width20p bottomCell"><div class="dataHeader">First name</div>John</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Last name</div>Doe</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Gender</div>Male</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">Date of birth</div>20 September 1954</td>
+            <td class="width20p bottomCell"><div class="dataHeader ">National ID</div>JH1243498937</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <h2 class="heading-medium">
+      Invoices
+    </h2>
+    <div class="grid-row">
+
+      <div class="column-one-third">
+        <label class="form-label-bold" for="ni-number">
+          Invoice date</label>
+          <fieldset>
+            <legend>
+              <span class="form-label-bold"></span>
+              <span class="form-hint" id="example-dob-hint-3">For example, 31 3 1980</span>
+            </legend>
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label class="form-label" for="example-dob-day-3">Day</label>
+                <input class="form-control" id="example-dob-day-3" name="dob-day" type="number" pattern="[0-9]*"
+                min="0" max="31" aria-describedby="example-dob-hint-3">
+              </div>
+              <div class="form-group form-group-month">
+                <label class="form-label" for="example-dob-month-3">Month</label>
+                <input class="form-control" id="example-dob-month-3" name="dob-month" type="number" pattern="[0-9]*"
+                min="0" max="12">
+              </div>
+              <div class="form-group form-group-year">
+                <label class="form-label" for="example-dob-year-3">Year</label>
+                <input class="form-control" id="example-dob-year-3" name="dob-year" type="number" pattern="[0-9]*"
+                min="0" max="2016">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="column-one-third">
+          <label class="form-label-bold" for="ni-number">
+            </br></br>Amount in $
+          </label>
+          <input class="form-control" id="ni-number" type="text">
+        </div>
+
+        <div class="column-one-third"></br>
+        </br></br>
+        <input class="button secondaryButton" type="submit" value="Add invoice">
+      </div>
+
+    </div>
+  </br>
+    <div >
+      <table >
+        <thead>
+          <tr>
+            <th scope="col">Invoice Date</th>
+            <th class="numeric" scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12 September 2016</td>
+            <td class="numeric">€ 2,763</td>
+          </tr>
+          <tr>
+            <td>12 September 2016</td>
+            <td class="numeric">€ 763</td>
+          </tr>
+          <tr>
+            <td>12 September 2016</td>
+            <td class="numeric">€ 435</td>
+          </tr>
+          <tr>
+            <td>12 September 2016</td>
+            <td class="numeric">€ 658</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+  <div>
+  <div class="multiple-choice">
+    <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+    <label for="waste-type-1">Process next invoice after this</label>
+  </div>
+
+  <div class="margin-top-50">
+    </br></br>
+    <form action="invoiceSuccess.html">
+      <div class="form-group">
+        <input class="button" type="submit" value="Save invoice">
+          <a class="cancelLink" href="#">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}
