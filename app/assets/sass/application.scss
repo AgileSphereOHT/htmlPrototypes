@@ -84,6 +84,9 @@ td {
 .tablinks{
   background: #ccc;
 }
+.padding-top-20{
+  padding-top: 20px;
+}
 
 div.tab {
     overflow: hidden;
@@ -145,4 +148,8 @@ div.tab a.active {
 .secondaryButton{
   background-color: #ccc;
   color:#000;
+}
+
+.floatRight{
+  float: right;
 }
