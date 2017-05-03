@@ -1,25 +1,61 @@
-{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
 
 <main id="content" role="main">
-	{% include "includes/phase_banner_alpha.html" %}
-	<div class="column-three-thirds">
-		<h1 class="heading-large">
-			OHT Prototype<span class="heading-secondary"></span>
-		</h1>
-		<p>Welcome to the OHT prototype. Follow one of the flows below.</p>
-	</div>
-	<h3 class="heading-small ">S1 request and registration </h3>
-  <p><a href="home.html">S1 requests and regsitration</a></p>
-	<h3 class="heading-small">Claims manager</h3>
-  <p><a href="claims/Line-Manager/index.html">Line Manager</a></p>
-  <h3 class="heading-small">FA claims from UK - Actual </h3>
-  <p><a href="claims/IN-Actuals/EDI/index.html">EDI - Claims processing</a></p>
-  <p><a href="claims/IN-Actuals/Paper/index.html">Paper - Claims processing</a></p>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-	<h3 class="heading-small">FA claims from UK - Average </h3>
-	<p><a href="claims/IN-Average/EDI/index.html">EDI - Claims processing</a></p>
-  <p><a href="claims/IN-Average/Paper/index.html">Paper - Claims processing</a></p>
-	<h3 class="heading-small">UK claims from FA - Average </h3>
+      <h1 class="heading-xlarge">
+        DOH Prototype based on The GOV.UK prototype kit
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+      </p>
+test
+      <p>
+        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      </p>
+
+      <h2 class="heading-medium">About this page</h2>
+
+      <p>We recommend you add links to your prototype to this page, rather than delete it.
+        You'll find this page in the kit at '/app/views/index.html'.</p>
+      <p>You can change the service name by editing the file '/app/config.js'.</p>
+
+			<h2 class="heading-medium">Examples and documentation</h2>
+
+			<ul class="list list-bullet">
+				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
+			</ul>
+
+      <h2 class="heading-medium">Other resources</h2>
+
+			<ul class="list list-bullet">
+				<li>
+					<a href="https://govuk-elements.herokuapp.com/snippets/">
+						Guide to GOV.UK Elements
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/service-manual">
+						Service design manual
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/design-principles">
+						Government Digital Service Design Principles
+					</a>
+				</li>
+			</ul>
+    </div>
+  </div>
 </main>
+
 {% endblock %}
